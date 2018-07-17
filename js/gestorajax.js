@@ -33,22 +33,22 @@ function gestionarRespuesta(respuesta){
     var nombre= document.createElement("h1");
     var textoNombre = document.createTextNode(obj.Title);
     nombre.appendChild(textoNombre);
-    document.body.appendChild(nombre);
+    document.getElementById("nn").appendChild(nombre);
 
     var Director= document.createElement("h2");
     var textoDirector = document.createTextNode(obj.Director);
     Director.appendChild(textoDirector);
-    document.body.appendChild(Director);
+    document.getElementById("nn").appendChild(Director);
 
     var año= document.createElement("h3");
     var textoAño = document.createTextNode(obj.Year);
     año.appendChild(textoAño);
-    document.body.appendChild(año);
+    document.getElementById("nn").appendChild(año);
 
     var SINOPSIS= document.createElement("h4");
     var textoSinopsis = document.createTextNode(obj.Plot);
     SINOPSIS.appendChild(textoSinopsis);
-    document.body.appendChild(SINOPSIS);
+    document.getElementById("nn").appendChild(SINOPSIS);
 
    var poster = document.createElement("img");
    poster.setAttribute("src",obj.Poster);
