@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="./20180717_EjemploBaseAjax/js/gestorajax.js"></script>
+	<script type="text/javascript">
+		function consultar() {
+			console.log("consultame guapo");
+			var titulo = document.getElementById("titulo").value;
+			console.log(titulo);
+			cargar("http://www.omdbapi.com/?apikey=9752c1cf&t=" + titulo);
+		}
+
+
+
+
+	</script>
+</head>
+
+<body>
+	<div id="mm">
+	<input type="text" id="titulo" placeholder="Titulo">
+	<input type="button" value="consultar" onclick="consultar()">
+</div>
+	<div id="nn"></div>
+</body>
+
+</html>
